@@ -14,6 +14,7 @@ import java.util.function.Function;
 public class ModItems {
 
     public static final Item CRYSTALITE  = registerItem("crystalite", Item::new);
+    public static final Item SUS  = registerItem("sus", Item::new);
 
 
     private static Item registerItem(String name, Function<Item.Properties, Item> function) {
@@ -26,6 +27,8 @@ public class ModItems {
 
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS).register(output ->
                 output.accept(CRYSTALITE) );
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS).register(output ->
+                output.accept(SUS) );
     }
 
 }
