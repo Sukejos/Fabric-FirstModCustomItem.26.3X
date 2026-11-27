@@ -13,7 +13,7 @@ import java.util.function.Function;
 
 public class ModItems {
 
-    public static final Item CRYSTALITE  = registerItem("Crystalite", Item::new);
+    public static final Item CRYSTALITE  = registerItem("crystalite", Item::new);
 
 
     private static Item registerItem(String name, Function<Item.Properties, Item> function) {
